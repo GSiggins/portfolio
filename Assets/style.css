@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: garamond, "goudy old style", helvetica, "optima", 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
     padding: 3px;
@@ -20,7 +20,7 @@ header {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     margin: 0 0;
-    padding: 2%;
+    padding: 1%;
     background-color: var(--seagreen);
     justify-content: space-between;
     border-radius: 0 0 25px;
@@ -29,7 +29,7 @@ header {
 
 article {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 header h1 {
@@ -53,15 +53,20 @@ nav ul li {
 
 section h3 {
     display: inline;
-    position:relative;
-    margin: 20px;
-    padding: 3px;
+    position:absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
     background-color: var(--seagreen);
 }
 
 .about-me {
-    padding: 10px;
-
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--drydirt);
+    border: 3px solid var(--terracotta);
+    border-radius: 0 0 25px;
+    max-width: 80%;
 }
 
 .big-card img {
@@ -73,9 +78,10 @@ section h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 70%;
-    justify-content: flex-end;
+    width: 90%;
+    justify-content: space-around;
     padding: 5px;
+    margin: 10px;
 }
 
 .big-card {
@@ -86,6 +92,9 @@ section h3 {
     background-position: center center;
     border: 2px solid var(--seagreen);
     padding: 2%;
+    margin: 20px;
+    box-shadow: 10px 10px 10px var(--seagreen);
+    position: relative;
 }
 
 
@@ -98,6 +107,9 @@ section h3 {
     min-height: 300px;
     border: 2px solid var(--seagreen);
     padding: 2%;
+    margin:  20px;
+    box-shadow: 10px 10px 10px var(--seagreen);
+    position: relative;
 }
 
 .small-card1 {
@@ -136,19 +148,44 @@ section h3 {
     html {
       background-color: var(--softpurple);
     }
-  }
+    .about-me {
+        background-color: var(--seagreen);
+        }
+    section h3,
+    .about-me,
+    .big-card {
+        border-color: var(--terracotta);
+    }
+    }
+  
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     html {
       background-color: var(--coolwaters);
     }
+    .about-me {
+    background-color: var(--seagreen);
+    }
+    section h3,
+    .about-me,
+    .big-card {
+        border-color: var(--softpurple);
+    }
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     html {
-      background-color: #8ac4ff;
+      background-color: var(--terracotta);
+    }
+    .about-me {
+        background-color: var(--seagreen);
+    }
+    section h3,
+    .about-me,
+    .big-card {
+         border-color: var(--terracotta);
     }
   }
   
