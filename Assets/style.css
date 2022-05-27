@@ -2,8 +2,10 @@
 --terracotta: #E27D60;
 --seagreen: #85dcb8;
 --drydirt: #e8a87c;
---softpurple: #C38D9E;
+--softpurple: #8d96c3;
 --coolwaters: #41B3A3;
+--kelp: rgb(110, 181, 113);
+--deepblue: #2f766d;
 --borderRadius: 0 0 25px;
 }
 
@@ -35,7 +37,10 @@ article {
 header h1 {
     justify-content: left;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 800;
+    color: var(--kelp);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
 }
 
@@ -63,8 +68,8 @@ section h3 {
 .about-me {
     margin: 30px auto;
     padding: 30px;
-    background-color: var(--drydirt);
-    border: 3px solid var(--terracotta);
+    background-color: var(--seagreen);
+    border: 3px solid var(--);
     border-radius: var(--borderRadius);
     max-width: 80%;
 }
@@ -125,17 +130,24 @@ section h3 {
 
 .contact-form {
     text-align: center;
-    background: var(--drydirt);
-    border: 3px solid var(--terracotta);
+    background: var(--deepblue);
+    border: 3px solid var(--kelp);
     border-radius: 15px;
     width: 350px;
     margin: 0 auto;
+}
+
+.contact-form ul {
+    display: inline;
 }
 
 .contact-form p {
     padding: 5px;
 }
 
+.small-card1:hover {
+
+}
 
 /* Media Query and associated styles*/
 @media screen and (max-width: 992px) {
