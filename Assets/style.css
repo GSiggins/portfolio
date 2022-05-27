@@ -16,7 +16,8 @@ html {
 }
 
 header {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     margin: 0 0;
     padding: 2%;
@@ -25,13 +26,21 @@ header {
     border-radius: 0 0 25px;
 }
 
+
+article {
+    display: flex;
+    justify-content: right;
+}
+
 header h1 {
+    justify-content: left;
     font-size: 36px;
     font-weight: 500;
 
 }
 
 nav ul {
+    justify-content: right;
     font-size: 24px;
     font-weight: 400;
     text-align: right;
@@ -42,13 +51,11 @@ nav ul li {
     padding: 8px;
 }
 
-article {
-
-}
-
-section h2 {
+section h3 {
     display: inline;
-    align-items: center;
+    position:relative;
+    margin: 20px;
+    padding: 3px;
     background-color: var(--seagreen);
 }
 
@@ -66,25 +73,82 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 70%;
+    justify-content: flex-end;
     padding: 5px;
-    justify-content: center;
 }
 
 .big-card {
-    display: flex;
-    flex: 2 0 400px;
+    flex: 2 0 100%;
+    min-height: 400px;
+    background: url("./Images/Password.jpg");
+    background-size: cover;
+    background-position: center center;
     border: 2px solid var(--seagreen);
+    padding: 2%;
 }
 
-.small-card {
-    display: flex;
-    flex: 1 0 200px;
-    min-width: 300px;
+
+.small-card1,
+.small-card2, 
+.small-card3 {
+    flex: 1 0 30%;
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
     border: 2px solid var(--seagreen);
+    padding: 2%;
+}
+
+.small-card1 {
+    background: url("./Images/web.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.small-card2 {
+    background: url("./Images/computer.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.small-card3 {
+    background: url("./Images/code.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .contact-form {
-    border: 3px;
+    text-align: center;
+    background: var(--drydirt);
+    border: 3px solid var(--terracotta);
     border-radius: 15px;
-    border-color: #E27D60;
+    width: 350px;
+    margin: 0 auto;
 }
+
+.contact-form p {
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 992px) {
+    html {
+      background-color: var(--softpurple);
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    html {
+      background-color: var(--coolwaters);
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    html {
+      background-color: #8ac4ff;
+    }
+  }
+  
