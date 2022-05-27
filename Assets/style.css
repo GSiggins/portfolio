@@ -56,6 +56,10 @@ nav ul li {
     padding: 8px;
 }
 
+li a {
+    text-decoration: none;
+}
+
 section h3 {
     display: inline;
     position:absolute;
@@ -99,6 +103,7 @@ section h3 {
     padding: 2%;
     margin:  20px;
     box-shadow: 10px 10px 10px var(--seagreen);
+    box-shadow: inset 10px 10px 150px 30px var(--seagreen);
     position: relative;
     border-radius: var(--borderRadius);
 }
@@ -137,7 +142,7 @@ section h3 {
     margin: 0 auto;
 }
 
-.contact-form ul {
+.contact-form ul li {
     display: inline;
 }
 
@@ -146,7 +151,17 @@ section h3 {
 }
 
 .small-card1:hover {
+    box-shadow: none;
+}
+.small-card2:hover {
+    box-shadow: none;
+}
+.small-card3:hover {
+    box-shadow: none;
+}
 
+.big-card:hover {  
+    box-shadow: none;
 }
 
 /* Media Query and associated styles*/
