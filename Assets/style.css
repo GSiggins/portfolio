@@ -4,7 +4,7 @@
 --drydirt: #e8a87c;
 --softpurple: #C38D9E;
 --coolwaters: #41B3A3;
-
+--borderRadius: 0 0 25px;
 }
 
 html {
@@ -17,13 +17,13 @@ html {
 
 header {
     display: flex;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: garamond, "goudy old style", helvetica, "optima", 'Courier New', Courier, monospace;
     width: 100%;
     margin: 0 0;
     padding: 1%;
     background-color: var(--seagreen);
     justify-content: space-between;
-    border-radius: 0 0 25px;
+    border-radius: var(--borderRadius);
 }
 
 
@@ -41,7 +41,7 @@ header h1 {
 
 nav ul {
     justify-content: right;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     text-align: right;
 }
@@ -65,7 +65,7 @@ section h3 {
     padding: 30px;
     background-color: var(--drydirt);
     border: 3px solid var(--terracotta);
-    border-radius: 0 0 25px;
+    border-radius: var(--borderRadius);
     max-width: 80%;
 }
 
@@ -84,50 +84,43 @@ section h3 {
     margin: 10px;
 }
 
-.big-card {
-    flex: 2 0 100%;
-    min-height: 400px;
-    background: url("./Images/Password.jpg");
-    background-size: cover;
-    background-position: center center;
-    border: 2px solid var(--seagreen);
-    padding: 2%;
-    margin: 20px;
-    box-shadow: 10px 10px 10px var(--seagreen);
-    position: relative;
-}
-
-
+.big-card,
 .small-card1,
 .small-card2, 
 .small-card3 {
-    flex: 1 0 30%;
     background-size: cover;
     background-position: center center;
-    min-height: 300px;
     border: 2px solid var(--seagreen);
     padding: 2%;
     margin:  20px;
     box-shadow: 10px 10px 10px var(--seagreen);
     position: relative;
+    border-radius: var(--borderRadius);
+}
+
+.small-card1,
+.small-card2, 
+.small-card3 {
+    flex: 1 0 30%;
+    min-height: 300px;
+}
+
+.big-card {
+    flex: 2 0 100%;
+    min-height: 400px;
+    background: url("./Images/Password.jpg");
 }
 
 .small-card1 {
     background: url("./Images/web.jpg");
-    background-size: cover;
-    background-position: center center;
 }
 
 .small-card2 {
     background: url("./Images/computer.png");
-    background-size: cover;
-    background-position: center center;
 }
 
 .small-card3 {
     background: url("./Images/code.jpg");
-    background-size: cover;
-    background-position: center center;
 }
 
 .contact-form {
@@ -144,6 +137,7 @@ section h3 {
 }
 
 
+/* Media Query and associated styles*/
 @media screen and (max-width: 992px) {
     html {
       background-color: var(--softpurple);
@@ -159,7 +153,6 @@ section h3 {
     }
   
   
-  /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     html {
       background-color: var(--coolwaters);
@@ -173,19 +166,19 @@ section h3 {
         border-color: var(--softpurple);
     }
   }
+
   
-  /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     html {
       background-color: var(--terracotta);
     }
     .about-me {
-        background-color: var(--seagreen);
+        background-color: var(--softpurple);
     }
     section h3,
     .about-me,
     .big-card {
-         border-color: var(--terracotta);
+         border-color: var(--drydirt);
     }
   }
   
