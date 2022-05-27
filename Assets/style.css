@@ -46,7 +46,7 @@ header h1 {
 
 nav ul {
     justify-content: right;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     text-align: right;
 }
@@ -54,13 +54,17 @@ nav ul {
 nav ul li {
     display: inline;
     padding: 8px;
+    font-weight: 800;
 }
 
-li a {
+li a{
     text-decoration: none;
+    color: var(--deepblue);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-section h3 {
+a h3 {
     display: inline;
     position:absolute;
     top: 60px;
@@ -69,6 +73,11 @@ section h3 {
     background-color: var(--seagreen);
 }
 
+header img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+}
 .about-me {
     margin: 30px auto;
     padding: 30px;
@@ -143,7 +152,7 @@ section h3 {
 }
 
 .contact-form ul li {
-    display: inline;
+    align-content: center;
 }
 
 .contact-form p {
@@ -172,7 +181,7 @@ section h3 {
     .about-me {
         background-color: var(--seagreen);
         }
-    section h3,
+    a h3,
     .about-me,
     .big-card {
         border-color: var(--terracotta);
@@ -187,7 +196,7 @@ section h3 {
     .about-me {
     background-color: var(--seagreen);
     }
-    section h3,
+    a h3,
     .about-me,
     .big-card {
         border-color: var(--softpurple);
@@ -202,7 +211,7 @@ section h3 {
     .about-me {
         background-color: var(--softpurple);
     }
-    section h3,
+    a h3,
     .about-me,
     .big-card {
          border-color: var(--drydirt);
